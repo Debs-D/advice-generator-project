@@ -16,7 +16,7 @@ body {
     border-width: 2px;
     border-radius: 7px;
     position: relative;
-    width: 50%;
+    width: 400px;
     background-color: #313A48;
     border: 1px solid none; 
     padding: 48px;
@@ -93,7 +93,7 @@ hr {
 
 @media  (max-width: 768px) {
     .box{
-        width: 90%;
+        width: 70%;
     }
 }
 

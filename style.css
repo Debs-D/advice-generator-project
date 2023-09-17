@@ -9,7 +9,6 @@ body {
     background-color: #202733;
 }
 .box {
-    display: grid;
     justify-content: center;
     align-items: center;
     color: #CEE3E9;
@@ -20,8 +19,8 @@ body {
     width: 50%;
     background-color: #313A48;
     border: 1px solid none; 
-    padding: 15px;
-    border-radius: 5px;
+    padding: 48px;
+    border-radius: 10px;
 }
 
 .box h3{
@@ -40,18 +39,17 @@ background-color: #313A48;
 font-family: Manrope;
 font-size: 18px;
 font-weight: 800;
-line-height: 38px;
+line-height: 30px;
 letter-spacing: -0.30000001192092896px;
 text-align: center;
 background-color: #313A48;
-
 }
 
 .boxed-centre{
-    width: 60%;
+    width: 100%;
     margin: 30px auto;
     display: flex;
-    align-items: center
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -72,6 +70,10 @@ hr {
     border-radius: 50%;
     display: flex;
     cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.btn-wrapper{
+    height: 54px;
 }
 
 .btn-container{
@@ -80,18 +82,19 @@ hr {
     justify-content: center;
     background: none;
     position: absolute;
-    bottom: -23%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    right: 0;
+    bottom: -27px;
 }
 
 .btn:hover{
     box-shadow: 0px -1px 12px 7px #53FFAA;
-    
 }
 
-@media only screen and (max-width: 768px) {
-      width: 100%;
+@media  (max-width: 768px) {
+    .box{
+        width: 90%;
     }
+}
 
 

@@ -15,10 +15,12 @@ async function fetchAdvice() {
 async function updateAdvice() {
     const quote = document.getElementById("quote");
     quote.textContent = "Fetching advice...";
+    const btn = document.querySelector(".btn");
+    btn.style.transform = "rotate(180deg)";
     const quoteText = await fetchAdvice();
 
     quote.textContent = quoteText.advice;
-    console.log(quoteText);
+    btn.style.transform = "rotate(0deg)";
 }
 
 const dice = document.getElementById("dice");
